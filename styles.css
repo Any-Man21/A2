@@ -15,12 +15,6 @@ body{
     position: relative;
 }
 
-.logo span{
-    background: linear-gradient(to right, #ff7eb3, #e621d1, #7f00ff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
 .btn-subscribe {
   background: linear-gradient(to right, #f9d423, #ff4e50, #d91de3);
 }
