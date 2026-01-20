@@ -9,3 +9,76 @@ body{
 
     margin-bottom: 200px;
 }
+
+
+.navbar{
+    position: relative;
+}
+
+.logo span{
+    background: linear-gradient(to right, #ff7eb3, #e621d1, #7f00ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.btn-subscribe {
+  background: linear-gradient(to right, #f9d423, #ff4e50, #d91de3);
+}
+
+#menu-toggle, .hamburger {
+  display: none;
+}
+
+@media screen and (max-width:576px) {
+    .dekstop-only{
+        display:none;
+    }
+    .hamburger{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        cursor: pointer;
+        z-index: 1001;
+    }
+    .hamburger span{
+        width: 25px;
+        height: 3px;
+        background-color: white;
+        transition: 0.3s;
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%; /* Hidden off-screen to the right */
+        height: 100vh;
+        width: 250px;
+        background-color: #1a0b4e;
+        flex-direction: column;
+        padding: 80px 40px;
+        transition: 0.5s ease;
+        z-index: 1000;
+        box-shadow: -5px 0 15px rgba(0,0,0,0.5);
+    }
+
+    #menu-toggle:checked ~ .nav-links {
+        right: 0;
+    }
+    #menu-toggle:checked ~ .hamburger span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 6px);
+    }
+    #menu-toggle:checked ~ .hamburger span:nth-child(2) {
+    opacity: 0;
+    }
+    #menu-toggle:checked ~ .hamburger span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -6px);
+    }
+}
+
+
+@media screen and (max-width:576px) {
+    header{
+        
+    }
+    
+}
